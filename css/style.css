@@ -588,6 +588,95 @@ body {
 .skill-mark.core { color: var(--red); }
 
 /* ============================================================
+   BEYOND THE FIELD
+   ============================================================ */
+#beyond { padding: 4rem 3rem; background: var(--white); }
+
+.beyond-header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: end;
+  margin-bottom: 3rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid var(--light);
+}
+.beyond-title {
+  font-family: var(--f-display);
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  font-weight: 900;
+  line-height: 0.95;
+  letter-spacing: -0.02em;
+}
+.beyond-title em { color: var(--red); font-style: italic; }
+.beyond-dek {
+  font-family: var(--f-body);
+  font-size: 0.85rem;
+  line-height: 1.8;
+  color: #555;
+}
+
+.beyond-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0;
+}
+.beyond-card {
+  padding: 2.5rem 2.5rem 2.5rem 0;
+  border-right: 1px solid var(--light);
+  position: relative;
+}
+.beyond-card:last-child { border-right: none; padding-right: 0; }
+.beyond-card:not(:first-child) { padding-left: 2.5rem; }
+
+.beyond-num {
+  font-family: var(--f-cond);
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.25em;
+  color: var(--gray);
+  margin-bottom: 1.5rem;
+}
+.beyond-icon {
+  font-size: 1.6rem;
+  color: var(--red);
+  margin-bottom: 1rem;
+  line-height: 1;
+  opacity: 0.7;
+}
+.beyond-card-title {
+  font-family: var(--f-display);
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: var(--black);
+  margin-bottom: 0.5rem;
+  line-height: 1.2;
+}
+.beyond-tag {
+  font-family: var(--f-cond);
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--red);
+  margin-bottom: 1rem;
+}
+.beyond-body {
+  font-family: var(--f-body);
+  font-size: 0.8rem;
+  line-height: 1.9;
+  color: #444;
+}
+
+@media (max-width: 900px) {
+  .beyond-header { grid-template-columns: 1fr; }
+  .beyond-grid   { grid-template-columns: 1fr; }
+  .beyond-card   { padding: 2rem 0; border-right: none; border-bottom: 1px solid var(--light); }
+  .beyond-card:last-child { border-bottom: none; }
+  .beyond-card:not(:first-child) { padding-left: 0; }
+}
+
+/* ============================================================
    PROJECTS
    ============================================================ */
 #projects { padding: 4rem 3rem; }
