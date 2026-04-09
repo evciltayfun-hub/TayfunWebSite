@@ -678,17 +678,22 @@ body {
   object-fit: cover;
   object-position: center center;
   display: block;
-  transition: transform 0.5s ease;
+  transition: transform 0.4s ease;
 }
-.beyond-card-img img.img-flip {
-  transform: rotate(180deg);
+.beyond-card-img img:hover { transform: scale(1.04); }
+
+/* amsterdam — bisikletçi sağda, sağa kaydır */
+.img-amsterdam { object-position: 72% center; }
+
+/* trail-run — runner ortada biraz yukarı */
+.img-trail { object-position: center 38%; }
+
+/* hiking — fotoğraf 180° ters çekilmiş, CSS ile döndür */
+.img-hiking {
+  transform: rotate(180deg) !important;
+  object-position: center 45%;
 }
-.beyond-card-img img.img-flip:hover {
-  transform: rotate(180deg) scale(1.04);
-}
-.beyond-card-img:not(:has(.img-flip)) img:hover {
-  transform: scale(1.04);
-}
+.img-hiking:hover { transform: rotate(180deg) scale(1.04) !important; }
 
 .beyond-num {
   font-family: var(--f-cond);
