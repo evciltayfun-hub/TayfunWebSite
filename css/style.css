@@ -683,17 +683,13 @@ body {
 .beyond-card-img img:hover { transform: scale(1.04); }
 
 /* amsterdam — bisikletçi sağda, sağa kaydır */
-.img-amsterdam { object-position: 72% center; }
+.img-amsterdam { object-position: 78% center; }
 
 /* trail-run — runner ortada biraz yukarı */
-.img-trail { object-position: center 38%; }
+.img-trail { object-position: center 35%; }
 
-/* hiking — fotoğraf 180° ters çekilmiş, CSS ile döndür */
-.img-hiking {
-  transform: rotate(180deg) !important;
-  object-position: center 45%;
-}
-.img-hiking:hover { transform: rotate(180deg) scale(1.04) !important; }
+/* hiking — dosya döndürüldü, yüz sol üstte */
+.img-hiking { object-position: 28% 18%; }
 
 .beyond-num {
   font-family: var(--f-cond);
