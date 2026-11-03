@@ -876,6 +876,47 @@ body {
   padding-bottom: 2px;
 }
 .proj-link:hover { color: var(--red); }
+.proj-card.proj-flagship {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: 1fr 1.25fr;
+  gap: 3rem;
+  padding: 2.6rem 2.4rem;
+  border-color: var(--black);
+  border-width: 1px 1px 3px;
+}
+.proj-card.proj-flagship .proj-card-title {
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 900;
+  letter-spacing: -0.01em;
+}
+.proj-card.proj-flagship .proj-desc { font-size: 0.85rem; }
+.proj-points {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.6rem 2rem;
+}
+.proj-points li {
+  font-family: var(--f-body);
+  font-size: 0.78rem;
+  line-height: 1.75;
+  color: #555;
+  border-top: 1px solid var(--light);
+  padding-top: 0.9rem;
+}
+.proj-points b {
+  display: block;
+  font-family: var(--f-cond);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--red);
+  margin-bottom: 0.4rem;
+}
 .proj-card.proj-more {
   display: flex;
   flex-direction: column;
@@ -1101,6 +1142,8 @@ footer {
   .skill-col         { padding: 1.5rem 0; border-right: none; border-bottom: 1px solid rgba(255,255,255,0.08); }
   .proj-grid         { grid-template-columns: 1fr; }
   .proj-card.featured { grid-row: auto; }
+  .proj-card.proj-flagship { grid-template-columns: 1fr; gap: 2rem; padding: 2rem; }
+  .proj-points { grid-template-columns: 1fr; }
   #contact           { grid-template-columns: 1fr; }
   .contact-left,
   .contact-right     { padding: 3rem 1.5rem; }

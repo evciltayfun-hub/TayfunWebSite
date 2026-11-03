@@ -381,13 +381,35 @@
 
   <div class="proj-masthead-row reveal">
     <h2 class="proj-section-title">Selected Work</h2>
-    <span class="proj-count">07 projects — 2021–2026</span>
+    <span class="proj-count">08 projects — 2021–2026</span>
   </div>
 
   <div class="proj-grid">
 
+    <div class="proj-card proj-flagship reveal">
+      <div class="proj-flagship-head">
+        <div class="proj-num-label">01 / Flagship Platform</div>
+        <h3 class="proj-card-title">AQUIONIS</h3>
+        <div class="proj-client">Cooling Tower Intelligence Platform — Python / Flask / Claude · Private</div>
+        <p class="proj-desc">A cooling water treatment platform built around one rule: every number comes from a deterministic calculation core, never from guesswork. It takes a makeup water analysis through a guided wizard, validates it, finds how far the water can be cycled, and turns the chemistry into a clear risk picture and a treatment projection.</p>
+        <div class="proj-tags">
+          <span class="proj-tag">Cooling Water</span>
+          <span class="proj-tag">Deterministic Engine</span>
+          <span class="proj-tag">Data Validation</span>
+          <span class="proj-tag">Claude Tool Use</span>
+          <span class="proj-tag">Private Platform</span>
+        </div>
+      </div>
+      <ul class="proj-points">
+        <li><b>Gate-1 validation</b>Every analysis is checked before anything is calculated: ion balance, impossible or out-of-range values, and units. Hardness and alkalinity are handled on a CaCO₃ basis, with lab units such as °dH, °f and gpg converted by the app's own tables.</li>
+        <li><b>Cycles &amp; scaling engine</b>Finds the cycles-of-concentration limit and the species that sets it, then calculates LSI at bulk and heat-transfer skin temperature, Ryznar, silica saturation and Larson-Skold. The worst index drives a single Low / Medium / High risk rating, and water that cannot be cycled at all is flagged as such.</li>
+        <li><b>AI assistant that never invents numbers</b>A built-in Claude assistant answers in plain language but calculates nothing itself. It calls the engine's own tools for unit conversion, ion-balance closure and what-if scenarios, and every call is shown in an Engine Calls panel so each figure can be checked.</li>
+        <li><b>Engineer stays in control</b>The assistant works on a copy of the project and can only propose changes; nothing is applied until the engineer approves it. Balance-closing values are labelled "assumed" and never written into the project, and scenarios that fail validation are stopped. All calculations and reports work without the AI layer.</li>
+      </ul>
+    </div>
+
     <div class="proj-card featured reveal">
-      <div class="proj-num-label">01 / Feature</div>
+      <div class="proj-num-label">02 / Field Delivery</div>
       <h3 class="proj-card-title">Multi-Site Industrial Treatment Program</h3>
       <div class="proj-client">Energy &amp; Steel Sector — MEA Region</div>
       <p class="proj-desc">Full technical and commercial documentation delivered simultaneously for two major industrial facilities — an energy plant and a steel complex. Scope covered SWRO systems, steam-boiler circuits, and large-scale cooling water loops. Complete chemical dosage tables built strictly from verified field data. No estimates, no fabrications. Branded technical reporting from chemical selection rationale through to commercial offer.</p>
@@ -401,7 +423,7 @@
     </div>
 
     <div class="proj-card reveal">
-      <div class="proj-num-label">02 / Engineering</div>
+      <div class="proj-num-label">03 / Engineering</div>
       <h3 class="proj-card-title">Process Manager</h3>
       <div class="proj-client">Internal Tool — Python / Streamlit</div>
       <p class="proj-desc">Built a full industrial process simulation platform with a CO₂/H₂S/NH₃/SO₂ stripping module. Henry's Law + Van't Hoff correction, extended Debye-Hückel activity coefficients, pH-dependent speciation, Kremser equation — an in-house OLI Systems parallel.</p>
@@ -413,7 +435,7 @@
     </div>
 
     <div class="proj-card reveal">
-      <div class="proj-num-label">03 / Publishing</div>
+      <div class="proj-num-label">04 / Publishing</div>
       <h3 class="proj-card-title">Cooling Water Treatment Handbook</h3>
       <div class="proj-client">Illustrated Reference — v3</div>
       <p class="proj-desc">Comprehensive illustrated handbook featuring full technical SVG diagrams. Covers calcium sulfate scaling dynamics, inhibited vs. uninhibited system chemistry, and complete treatment program design methodology.</p>
@@ -425,7 +447,7 @@
     </div>
 
     <div class="proj-card reveal">
-      <div class="proj-num-label">04 / Procurement</div>
+      <div class="proj-num-label">05 / Procurement</div>
       <h3 class="proj-card-title">Produced Water Chemical Classification</h3>
       <div class="proj-client">Supplier Inquiry Program</div>
       <p class="proj-desc">Systematic commodity vs. proprietary chemical classification for a produced water treatment project. Full supplier inquiry documentation and procurement communication strategy across multiple chemical categories.</p>
@@ -437,7 +459,7 @@
     </div>
 
     <div class="proj-card reveal">
-      <div class="proj-num-label">05 / Open Source</div>
+      <div class="proj-num-label">06 / Open Source</div>
       <h3 class="proj-card-title">RO Optimizer</h3>
       <div class="proj-client">Web App — Python / Flask / PHREEQC</div>
       <p class="proj-desc">Reverse osmosis scaling and recovery tool. Splits a raw water analysis into feed, permeate and brine streams at a chosen recovery, then calculates mineral saturation with the USGS PHREEQC engine, treating CO₂ as a closed system across the membrane. Reports LSI, Ryznar, Stiff-Davis, Puckorius and Larson-Skold indices and suggests an antiscalant.</p>
@@ -450,7 +472,7 @@
     </div>
 
     <div class="proj-card reveal">
-      <div class="proj-num-label">06 / Open Source</div>
+      <div class="proj-num-label">07 / Open Source</div>
       <h3 class="proj-card-title">GeoWell Assessment</h3>
       <div class="proj-client">Geothermal Field Tool — Python / Flask</div>
       <p class="proj-desc">Chemical cleaning assessment for geothermal wells, built for field work in Kenya. Calculates flash point and steam quality, gives reservoir temperature from silica, Na/K and K/Mg geothermometers, checks brine charge balance and mineral saturation along the well depth, and sizes wellbore volumes and the treatment split.</p>
@@ -463,7 +485,7 @@
     </div>
 
     <div class="proj-card reveal">
-      <div class="proj-num-label">07 / Open Source</div>
+      <div class="proj-num-label">08 / Open Source</div>
       <h3 class="proj-card-title">FactorLab (OpenDOE)</h3>
       <div class="proj-client">DOE Platform — Python / Streamlit</div>
       <p class="proj-desc">Design of Experiments platform that runs from design to optimum. Guided wizard for full and fractional factorial, Plackett-Burman, central composite and Box-Behnken designs; model fitting with ANOVA and residual diagnostics; response optimization; and Claude-powered interpretation of the results.</p>
