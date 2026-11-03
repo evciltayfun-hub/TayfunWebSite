@@ -862,6 +862,29 @@ body {
   color: var(--gray);
 }
 
+.proj-link {
+  display: inline-block;
+  margin-top: 1.1rem;
+  font-family: var(--f-cond);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--black);
+  text-decoration: none;
+  border-bottom: 1px solid var(--red);
+  padding-bottom: 2px;
+}
+.proj-link:hover { color: var(--red); }
+.proj-card.proj-more {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  text-decoration: none;
+  color: inherit;
+}
+.proj-card.proj-more:hover .proj-link { color: var(--red); }
+
 /* ============================================================
    CONTACT
    ============================================================ */
