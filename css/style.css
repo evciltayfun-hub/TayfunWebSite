@@ -917,6 +917,7 @@ body {
   color: var(--red);
   margin-bottom: 0.4rem;
 }
+.proj-card.proj-wide { grid-column: span 2; }
 .proj-card.proj-more {
   display: flex;
   flex-direction: column;
@@ -1144,6 +1145,7 @@ footer {
   .proj-card.featured { grid-row: auto; }
   .proj-card.proj-flagship { grid-template-columns: 1fr; gap: 2rem; padding: 2rem; }
   .proj-points { grid-template-columns: 1fr; }
+  .proj-card.proj-wide { grid-column: auto; }
   #contact           { grid-template-columns: 1fr; }
   .contact-left,
   .contact-right     { padding: 3rem 1.5rem; }
