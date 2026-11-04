@@ -1146,7 +1146,9 @@ footer {
   .proj-card.proj-flagship { grid-template-columns: 1fr; gap: 2rem; padding: 2rem; }
   .proj-points { grid-template-columns: 1fr; }
   .proj-card.proj-wide { grid-column: auto; }
-  #contact           { grid-template-columns: 1fr; }
+  #contact           { grid-template-columns: minmax(0, 1fr); }
+  .form-row          { grid-template-columns: minmax(0, 1fr); }
+  .form-input        { width: 100%; min-width: 0; box-sizing: border-box; }
   .contact-left,
   .contact-right     { padding: 3rem 1.5rem; }
   footer             { flex-direction: column; gap: 0.5rem; padding: 1.2rem 1.5rem; text-align: center; }
