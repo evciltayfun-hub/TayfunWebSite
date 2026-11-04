@@ -467,7 +467,7 @@ body {
   padding: 2rem 0;
   border-bottom: 1px solid var(--light);
   display: grid;
-  grid-template-columns: 90px 1fr;
+  grid-template-columns: 110px 1fr;
   gap: 1.5rem;
   transition: background 0.2s;
 }
@@ -475,13 +475,29 @@ body {
 .exp-card:last-child { border-bottom: none; }
 
 .exp-year {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   font-family: var(--f-display);
   font-size: 1.6rem;
   font-weight: 900;
-  color: var(--light);
+  color: var(--black);
   line-height: 1;
   padding-top: 3px;
 }
+.exp-dash { color: var(--red); font-size: 1.1rem; line-height: 1.1; margin: 0.15rem 0; }
+.exp-y.exp-now { color: var(--red); }
+.exp-span,
+.exp-dur {
+  font-family: var(--f-cond);
+  font-size: 9.5px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  line-height: 1.35;
+}
+.exp-span { color: var(--gray); margin-top: 0.8rem; }
+.exp-dur  { color: var(--red); margin-top: 0.2rem; }
 .exp-co {
   font-family: var(--f-display);
   font-weight: 700;
@@ -1146,6 +1162,11 @@ footer {
   .proj-card.proj-flagship { grid-template-columns: 1fr; gap: 2rem; padding: 2rem; }
   .proj-points { grid-template-columns: 1fr; }
   .proj-card.proj-wide { grid-column: auto; }
+  .exp-card          { grid-template-columns: minmax(0, 1fr); gap: 0.9rem; }
+  .exp-year          { flex-direction: row; flex-wrap: wrap; align-items: baseline; gap: 0 0.5rem; font-size: 1.4rem; }
+  .exp-dash          { margin: 0; }
+  .exp-span          { flex-basis: 100%; margin-top: 0.4rem; }
+  .exp-dur           { flex-basis: 100%; }
   #contact           { grid-template-columns: minmax(0, 1fr); }
   .form-row          { grid-template-columns: minmax(0, 1fr); }
   .form-input        { width: 100%; min-width: 0; box-sizing: border-box; }
