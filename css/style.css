@@ -934,6 +934,7 @@ body {
   margin-bottom: 0.4rem;
 }
 .proj-card.proj-wide { grid-column: span 2; }
+.proj-card.proj-full { grid-column: 1 / -1; }
 .proj-card.proj-more {
   display: flex;
   flex-direction: column;
